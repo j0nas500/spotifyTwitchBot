@@ -3,5 +3,5 @@ When a Channel Point reward is redeemed and either a Spotify link or the song na
 If the song was not found, the reward will be rejected.
 
 ## How to install
-1. Copy the string of the [addSongToQueue]() File and import it into Streamer.Bot
+1. Copy the string of the [addSongToQueue](https://raw.githubusercontent.com/j0nas500/spotifyTwitchBot/master/actions/addSongToQueue/addSongToQueue?token=GHSAT0AAAAAABYHXQWEO3R726TZE6DTF4OYY2BRARQ) File and import it into Streamer.Bot
 2. In the action "CP: Add Song to Queue" change the paths from the sub-actions "Write to File" and "Read Lines" to the files input.txt and output.txt, which are contained here

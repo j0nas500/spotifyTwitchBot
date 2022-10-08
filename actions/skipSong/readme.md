@@ -4,4 +4,4 @@ This action reads the current song from the Spotify application and knows if a s
 If Spotify is playing a song, then a C# program is used to press the media key to skip the song. The points are then automatically considered redeemed
 
 ## How to Install
-Copy the string of the [skipSong]() File and import it into Streamer.Bot
+Copy the string of the [skipSong](https://raw.githubusercontent.com/j0nas500/spotifyTwitchBot/master/actions/skipSong/skipSong?token=GHSAT0AAAAAABYHXQWEJSZKJDJJKKBZ7S52Y2BRCLA) File and import it into Streamer.Bot
