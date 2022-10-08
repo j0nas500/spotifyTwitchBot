@@ -1,5 +1,5 @@
 .idea/
 __pychache__/
-.cache/
+.cache
 env.py
 bot.py
