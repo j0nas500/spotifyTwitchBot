@@ -1,10 +1,11 @@
-# Creates bot2.py File
 import os
 from pprint import pprint
 from string import Template
 
 import spotipy
 from spotipy import SpotifyOAuth
+
+# Creates bot.py File
 
 print("You need a Spotify Developer App. You can create the app here: https://developer.spotify.com/dashboard/")
 print("In \"edit Setting\" add the redirect URI \"http://localhost:8090\" and click on save")
@@ -82,7 +83,7 @@ else:
 ''')
 file_data = file_data.substitute({ 'client_id': client_id, 'client_secret': client_secret, 'device_id': device_id })
 
-with open("testExample.py", 'w') as f:
+with open("bot.py", 'w') as f:
     f.write(file_data)
 
-print("File bot2.py succesfully created")
+print("File bot.py succesfully created")
