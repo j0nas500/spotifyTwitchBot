@@ -25,7 +25,7 @@ Clone the repository or [download the ZIP](https://github.com/j0nas500/spotifyTw
 1. Install spotipy with Pip: `pip install spotipy`
 2. Start the music on Spotify on your computer to get the device ID
 3. Run `setup.py` (`python setup.py`) to set everything up
-4. If everything worked, you get the following output: "File bot.py succesfully created"
+4. If everything worked, a new file `bot.py` should now exist and you get the following output: "File bot.py succesfully created"
 
 ### Set up Streamer.Bot
 In the actions folder, there are several actions for Streamer.Bot. The only necessary action is `addSongToQueue`. All others are optional.

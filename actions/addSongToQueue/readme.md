@@ -12,7 +12,7 @@ If the song was not found, the reward will be rejected.
 1. Install spotipy with Pip: `pip install spotipy`
 2. Start the music on Spotify on your computer to get the device ID
 3. Run `setup.py` (`python setup.py`) to set everything up
-4. If everything worked, you get the following output: "File bot.py succesfully created"
+4. If everything worked, a new file `bot.py` should now exist and you get the following output: "File bot.py succesfully created"
 
 ### Set up Streamer.Bot
 1. Copy the string of the [addSongToQueue](https://raw.githubusercontent.com/j0nas500/spotifyTwitchBot/master/actions/addSongToQueue/addSongToQueue?token=GHSAT0AAAAAABYHXQWEO3R726TZE6DTF4OYY2BRARQ) File and import it into Streamer.Bot
