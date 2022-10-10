@@ -2,9 +2,16 @@
 Python Script using the Package [spotipy](https://github.com/plamere/spotipy) to add songs requested by Twitch viewers to the queue. This is possible by using  [Streamer.Bot](https://streamer.bot/)
 
 ## Requirements
-- Have Streamer.Bot set up
+- Have [Streamer.Bot](https://streamer.bot/) set up
 - [Python](https://www.python.org/)
-- Spotify Account
+- [Spotify Account](https://www.spotify.com/) (Premium if you want use the Songrequest Feature)
+
+## Features
+- [Spotify Songrequests](https://github.com/j0nas500/spotifyTwitchBot/tree/master/actions/addSongToQueue) [with Spotify Premium only]
+- [enable / disable Songrequests](https://github.com/j0nas500/spotifyTwitchBot/tree/master/actions/enableDisableSongRequest)
+- [current Spotify Song](https://github.com/j0nas500/spotifyTwitchBot/tree/master/actions/getSpotifySong)
+- [skip Spotify Song](https://github.com/j0nas500/spotifyTwitchBot/tree/master/actions/skipSong)
+
 
 ## How to install
 Clone the repository or [download the ZIP](https://github.com/j0nas500/spotifyTwitchBot/archive/refs/heads/master.zip) and unzip it
