@@ -40,14 +40,14 @@ import os
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-scope = ["user-modify-playback-state", "user-read-playback-state"]
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
-
 # CHANGE THIS TO REAL VALUES
 os.environ["SPOTIPY_CLIENT_ID"] = "$client_id"
 os.environ["SPOTIPY_CLIENT_SECRET"] = "$client_secret"
 os.environ["SPOTIPY_REDIRECT_URI"] = "http://localhost:8090"
 device_id = "$device_id"
+
+scope = ["user-modify-playback-state", "user-read-playback-state"]
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
 with open('input.txt') as f:
     response = f.readlines()
