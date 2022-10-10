@@ -33,7 +33,7 @@ In the actions folder, there are several actions for Streamer.Bot. The only nece
 Building out needed information...
 Compiled successfully!
 ```
-3. Create a Channel Point reward in Streamer Bot with "User Input Required" and set the action "CP: Add Song to Queue" there.
+6. Create a Channel Point reward in Streamer Bot with "User Input Required" and set the action "CP: Add Song to Queue" there.
 
 Now as soon as who redeems the reward and sends in a song name or Spotify link, this song should have been added to your queue. 
 
