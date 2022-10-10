@@ -1,1 +1,1 @@
-You have requested the song photosynthese by Dilla.
+ArgumentError

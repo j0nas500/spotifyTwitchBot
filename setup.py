@@ -38,6 +38,7 @@ device_id = input("Now enter your device id (id) here: ")
 file_data = Template('''\
 import os
 import spotipy
+import string
 from spotipy.oauth2 import SpotifyOAuth
 
 # CHANGE THIS TO REAL VALUES
@@ -68,7 +69,12 @@ if response[0].startswith('https://open.spotify.com/track/'):
             f.write(f'ERROR')
 else:
     try:
-        res = sp.search(q='track' + response[0], type='track', limit=1)
+        if not response[0].__contains__('-'):
+            raise ValueError
+        split:string = response[0].split('-')
+        track:string = split[0].strip()
+        artist:string = split[1].strip()
+        res = sp.search(q=f'track:{track} artist:{artist}', type='track', limit=1)
         url = res['tracks']['items'][0]['external_urls']['spotify']
         artist = res['tracks']['items'][0]['artists'][0]['name']
         track = res['tracks']['items'][0]['name']
@@ -76,6 +82,10 @@ else:
         with open('output.txt', 'w', encoding='utf-8') as f:
             f.write(f'You have requested the song {track} by {artist}.')
         print(f'You have requested the song {track} by {artist}')
+    except ValueError:
+        print('Wrong Format')
+        with open('output.txt', 'w', encoding='utf-8') as f:
+            f.write(f'ArgumentError')
     except Exception:
         print("Error")
         with open('output.txt', 'w', encoding='utf-8') as f:
