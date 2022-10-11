@@ -63,6 +63,7 @@ if response[0].startswith('https://open.spotify.com/track/'):
         with open('output.txt', 'w', encoding='utf-8') as f:
             f.write(f'You have requested the song {track} by {artist}.')
         print(f'You have requested the song {track} by {artist}')
+        
     except Exception:
         print("Error")
         with open('output.txt', 'w', encoding='utf-8') as f:
@@ -71,21 +72,31 @@ else:
     try:
         if not response[0].__contains__('-'):
             raise ValueError
+
         split:string = response[0].split('-')
         track:string = split[0].strip()
         artist:string = split[1].strip()
         res = sp.search(q=f'track:{track} artist:{artist}', type='track', limit=1)
+
+        if len(res['tracks']['items']) == 0:
+            track = split[1].strip()
+            artist = split[0].strip()
+            res = sp.search(q=f'track:{track} artist:{artist}', type='track', limit=1)
+
         url = res['tracks']['items'][0]['external_urls']['spotify']
         artist = res['tracks']['items'][0]['artists'][0]['name']
         track = res['tracks']['items'][0]['name']
+
         sp.add_to_queue(url, device_id)
         with open('output.txt', 'w', encoding='utf-8') as f:
             f.write(f'You have requested the song {track} by {artist}.')
         print(f'You have requested the song {track} by {artist}')
+
     except ValueError:
         print('Wrong Format')
         with open('output.txt', 'w', encoding='utf-8') as f:
             f.write(f'ArgumentError')
+
     except Exception:
         print("Error")
         with open('output.txt', 'w', encoding='utf-8') as f:
