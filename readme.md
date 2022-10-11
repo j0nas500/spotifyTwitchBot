@@ -28,7 +28,7 @@ Clone the repository or [download the ZIP](https://github.com/j0nas500/spotifyTw
 4. If everything worked, a new file `bot.py` should now exist and you get the following output: "File bot.py succesfully created"
 
 ### Set up Streamer.Bot
-In the actions folder, there are several actions for Streamer.Bot. The only necessary action is `addSongToQueue`. All others are optional.
+In the [actions](https://github.com/j0nas500/spotifyTwitchBot/tree/master/actions) folder, there are several actions for Streamer.Bot. The only necessary action is `addSongToQueue`. All others are optional.
 
 1. Copy the string of the [addSongToQueue](https://raw.githubusercontent.com/j0nas500/spotifyTwitchBot/master/actions/addSongToQueue/addSongToQueue?token=GHSAT0AAAAAABYHXQWEO3R726TZE6DTF4OYY2BRARQ) File and import it into Streamer.Bot
 2. In the action "CP: Add Song to Queue" change the paths from the sub-actions "Write to File" and "Read Lines" to the files input.txt and output.txt, which are contained here
