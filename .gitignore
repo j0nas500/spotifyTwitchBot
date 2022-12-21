@@ -1,8 +1,5 @@
 .idea/
 __pycache__/
-.cache
-env.py
-bot2.py
-bot.py
+scripts/.cache
 input.txt
 output.txt
