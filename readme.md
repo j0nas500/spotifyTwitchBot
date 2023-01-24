@@ -26,6 +26,7 @@ Clone the repository or [download the ZIP](https://github.com/j0nas500/spotifyTw
 
 ### Set up Python
 1. Install spotipy with pip: `pip install spotipy`
+2. Install dotenv with pip: `pip install python-dotenv`
 
 ### Set up Streamer.Bot
 1. Copy the string of the [streamerbotImportString](https://raw.githubusercontent.com/j0nas500/spotifyTwitchBot/master/streamerbotImportString) File and import it into Streamer.Bot
